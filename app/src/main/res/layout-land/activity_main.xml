@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:padding="10dp"
+            android:text="Traffic Information Scotland"
+            android:textAlignment="center"
+            android:textColor="#088F8F"
+            android:textSize="20dp"
+            android:textStyle="bold" /> />
+
+<!--            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+
+                android:background="#FFFFFFFF"
+                android:orientation="vertical"
+
+
+
+                >
+
+                <TextView
+                    android:id="@+id/itemsTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:textAlignment="center"
+                    android:textColor="#FF000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/cIncidentsBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:text="Incidents"
+                    app:backgroundTint="#088F8F" />
+
+                <Button
+                    android:id="@+id/rWorksBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:text="Roadworks"
+                    app:backgroundTint="#088F8F" />
+
+                <Button
+                    android:id="@+id/pRWorksBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:text="Planned Roadworks"
+                    app:backgroundTint="#088F8F" />
+
+            </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/filter"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:hint="Search or Enter Date"
+            android:singleLine="true"
+            android:textColor="#383D8A" />
+
+
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+    <ListView
+        android:id="@+id/itemsList"
+        android:textColor="@color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="15sp"
+        android:textAlignment="center"/>
+<!--</RelativeLayout>-->
+<!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
